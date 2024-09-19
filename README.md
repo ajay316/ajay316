@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @ajay316
-- 👀 I’m interested in Web development 
-- 🌱 I’m currently learning javascript
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+Hi, I’m ajay
+I’m interested in Web development 
+I’m currently learning javascript
+I’m looking to collaborate on ...
+How to reach me ...
 
 <!---
 ajay316/ajay316 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
