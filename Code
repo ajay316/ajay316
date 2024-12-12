@@ -1,0 +1,61 @@
+#include <stdio.h> //Preprocessor Directives
+
+2. int main()
+
+3. {
+
+4. int a[10],i,n,key,pos=-1,low,high,mid; // Declaration of Variables
+
+5. printf("Enter the size of an array: ");
+
+6. scanf("%d",&n); // Read n
+
+7. printf("Enter the elements in ascending order: ");
+
+8. for(i=0;i<n;i++) // Read n elements (in ascending order)
+
+9. scanf("%d", &a[i]);
+
+10. printf("Enter the number to be searched: "); // Prints the contents inside quotation
+
+11. scanf("%d",&key); // Reads the number to be searched
+
+12. low = 0; //To point to starting of the array
+
+13. high = n-1; // To point the end of the array
+
+14. while(low <= high) //to test whether we have reached the end of array
+
+15. {
+
+16. mid = (low+high)/2; // to indicate middle of array
+
+17. if(key == a[mid]) // compare if the middle item of array is equal to
+
+searching item
+
+18. {
+
+19. pos = mid; // to address the location of middle item
+
+20. break; // come out of while loop
+
+21. }
+
+22. else if(key<a[mid]) //to check first half of the array
+
+high =mid-1; // last element to check in first half of array is mid-1
+
+24. else //to check second half of array
+
+25. low=mid+1; // make first element to search is middle+1
+
+26. }
+
+27. if(pos == -1) // check whether search item is found or not
+
+28. printf("%d is not found\n", key);
+
+29. else
+
+30. printf("%d is found at position %d ",key, pos+1);
